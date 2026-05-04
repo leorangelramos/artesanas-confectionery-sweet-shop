@@ -1,0 +1,23 @@
+{
+  "name": "Artesanas Doces e Salgados",
+  "short_name": "Artesanas",
+  "description": "Peça brownies, geladinhos gourmet e salgados artesanais em Caraguatatuba.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FCF9F2",
+  "theme_color": "#2d1b18",
+  "icons": [
+    {
+      "src": "image/artesanas.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "image/artesanas.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ]
+}

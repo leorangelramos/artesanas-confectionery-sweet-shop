@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Artesanas | Doces e Salgados em Caraguatatuba</title>  
+    <meta name="description" content="Delícias artesanais em Caraguatatuba. Geladinhos gourmet, brownies recheados, tortas no pote e salgados caseiros. Peça pelo WhatsApp e receba em casa!">
+    <meta name="keywords" content="geladinho gourmet, brownie, salgados, doces artesanais, Caraguatatuba, delivery doces, torta no pote, kit festa">
+    <meta name="author" content="Artesanas">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://artesanasdoces.com.br/">
+    <meta name="google-site-verification" content="Infcskw3BuPNd2PmbDXtBlWlY5OEvAW-CgVdyMRwA3U" />
+    <meta name="google-site-verification" content="5toO6U6qQvM7gMGBGSNH_YwX36xF_kTu37visQnKU0Y" />
+   
+    <!-- === TAGS PWA === -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#2d1b18">
+    <link rel="apple-touch-icon" href="image/artesanas.jpg">
+    <!-- ================ -->
+
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Artesanas - Sabor de afeto em cada pedaço">
+    <meta property="og:description" content="Doces e salgados artesanais: Brownies, Geladinhos Gourmet e muito mais. Peça agora!">
+    <meta property="og:url" content="https://artesanasdoces.com.br/">
+    <meta property="og:image" content="https://artesanasdoces.com.br/image/artesanas.jpg">
+    <meta property="og:site_name" content="Artesanas Doces e Salgados">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Artesanas | Doces e Salgados">
+    <meta name="twitter:description" content="Delícias artesanais em Caraguatatuba. Peça geladinhos, brownies e salgados.">
+    <meta name="twitter:image" content="https://artesanasdoces.com.br/image/artesanas.jpg">
+
+    <link rel="icon" href="image/artesanas.jpg" type="image/png">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- CSS Isolado para o botão PWA (Discreto) -->
+    <style>
+        .pwa-btn {
+            display: none; /* Só aparece se o dispositivo suportar PWA */
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: #dccbb5;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-left: 10px;
+            vertical-align: middle;
+            font-family: inherit;
+        }
+        .pwa-btn:hover {
+            background: rgba(255, 255, 255, 0.15);
+            color: #fff;
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+        .pwa-btn i {
+            margin-right: 4px;
+        }
+    </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": ["FoodEstablishment", "LocalBusiness"],
+          "@id": "https://artesanasdoces.com.br/#organization",
+          "name": "Artesanas Doces e Salgados",
+          "url": "https://artesanasdoces.com.br/",
+          "logo": "https://artesanasdoces.com.br/image/artesanas.jpg",
+          "image": "https://artesanasdoces.com.br/image/artesanas.jpg",
+          "telephone": "+5512996261818",
+          "priceRange": "$",
+          "description": "Confeitaria artesanal em Caraguatatuba especializada em brownies recheados, geladinhos gourmet, tortas no pote e salgados caseiros.",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Caraguatatuba",
+            "addressRegion": "SP",
+            "addressCountry": "BR"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "-23.6226", 
+            "longitude": "-45.4129"
+          },
+          "areaServed": {
+            "@type": "City",
+            "name": "Caraguatatuba",
+            "@id": "https://www.wikidata.org/wiki/Q1793504"
+          },
+          "servesCuisine": ["Brasileira", "Doces", "Salgados", "Confeitaria"],
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            "opens": "09:00",
+            "closes": "18:00"
+          },
+          "sameAs": [
+            "https://www.instagram.com/artesanasdocesesalgados"
+          ]
+        },
+        {
+          "@type": "Menu",
+          "@id": "https://artesanasdoces.com.br/#menu",
+          "mainEntityOfPage": "https://artesanasdoces.com.br/",
+          "hasMenuSection": [
+            {
+              "@type": "MenuSection",
+              "name": "Geladinhos Gourmet",
+              "description": "Limão Cremoso, Maracujá, Frutas Vermelhas, Ninho com Nutella e Panetone.",
+              "itemListElement": [
+                {
+                  "@type": "MenuItem",
+                  "name": "Geladinho Gourmet Limão",
+                  "description": "Refrescante, cítrico e cremoso."
+                }
+              ]
+            },
+            {
+              "@type": "MenuSection",
+              "name": "Brownies Recheados",
+              "description": "Brownies artesanais de Doce de Leite, Brigadeiro, Ninho, Paçoca e Café.",
+              "itemListElement": [
+                {
+                  "@type": "MenuItem",
+                  "name": "Brownie de Brigadeiro",
+                  "description": "Massa úmida com brigadeiro artesanal e granulado."
+                }
+              ]
+            },
+            {
+              "@type": "MenuSection",
+              "name": "Salgados Artesanais",
+              "description": "Tortas de frango inteiras ou em fatias.",
+              "itemListElement": [
+                {
+                  "@type": "MenuItem",
+                  "name": "Torta de Frango",
+                  "description": "Massa caseira com recheio cremoso."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://artesanasdoces.com.br/#webpage",
+          "url": "https://artesanasdoces.com.br/",
+          "name": "Artesanas | Doces e Salgados Artesanais em Caraguatatuba",
+          "isPartOf": { "@id": "https://artesanasdoces.com.br/#organization" },
+          "about": { "@id": "https://artesanasdoces.com.br/#organization" },
+          "description": "Peça brownies, geladinhos gourmet e salgados artesanais em Caraguatatuba pelo WhatsApp."
+        }
+      ]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="nav-wrapper">
+        <header id="navbar" class="glass-nav">
+            <div class="nav-container">
+              <a href="#" class="logo-link">
+                <img src="image/artesanas.jpg" alt="Logo Artesanas Doces e Salgados" width="45" height="45" class="nav-logo">
+                <div class="logo-info">
+                    <span class="logo-text">Artesanas</span>
+                    <span class="logo-subtitle">Doces e Salgados</span>
+                </div>
+            </a>
+                
+                <button class="mobile-menu-btn" aria-label="Abrir Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <nav class="nav-links">
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#menu">Cardápio</a></li>
+                        <li><a href="#encomendas" class="btn-nav-highlight">Encomendar</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <main>
+        
+        <section id="home" class="hero">
+            <video autoplay muted loop playsinline class="hero-bg-video">
+                <source src="video/Videogeladinho01.mp4" type="video/mp4">
+            </video>
+
+            <div class="hero-overlay"></div>
+            <div class="hero-content container">
+                <span class="hero-subtitle">Sabor de afeto em cada pedaço</span>
+                <h1>Doces e Salgados<br>artesanais</h1>
+                <p>Do clássico brownie ao geladinho gourmet. Sinta o sabor caseiro.</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary">Cardápio</a>
+                    <a href="https://wa.me/5512996261818" target="_blank" rel="noopener noreferrer" class="btn btn-glass">Encomendar</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="section-padding bg-accent">
+            <div class="container about-grid">
+                <div class="about-text">
+                    <h2>Feito por mãos que amam o que fazem</h2>
+                    <p>Na <strong>Artesanas</strong>, acreditamos que a confeitaria vai além de misturar ingredientes. É sobre criar memórias. Nossas receitas combinam técnicas tradicionais com aquele toque caseiro insubstituível.</p>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check-circle"></i> Ingredientes frescos e selecionados</li>
+                        <li><i class="fas fa-check-circle"></i> Produção 100% artesanal</li>
+                        <li><i class="fas fa-check-circle"></i> Feito sob encomenda para você</li>
+                    </ul>
+                </div>
+                
+                <div class="about-image video-slider-container apple-card">
+                    <video autoplay muted loop playsinline class="slide-video active" src="video/Brownievideo01.mp4"></video>
+                    <video autoplay muted loop playsinline class="slide-video" src="video/Brownievideo02.mp4"></video>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="container section-padding">
+            <div class="section-header center-text">
+                <h2>Nosso Cardápio</h2>
+                <p>Escolha:</p>
+            </div>
+
+            <section id="geladinhos" class="category-section">
+                <div class="category-title">
+                    <h3>Geladinhos <br> Gourmet</h3>
+                    <div class="separator"></div>   
+                </div>
+                <div class="product-grid">
+                    
+                    <div class="product-card">
+                        <div class="card-img-holder">
+                            <img src="image/geladinhoimagelimao.jpg" alt="Geladinho Gourmet de Limão cremoso" width="400" height="300" loading="lazy">
+                        </div>
+                        <div class="card-info">
+                            <h4>Limão Cremoso</h4>
+                            <p>Refrescante, cítrico e muito cremoso.</p>
+                            <a href="https://wa.me/5512996261818?text=Quero encomendar Geladinho de Limão" target="_blank" rel="noopener noreferrer" class="btn-card">Pedir</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="card-img-holder">
+                            <img src="image/geladinhoimagemaracuja.jpg" alt="Geladinho Gourmet Maracujá natural" width="400" height="300" loading="lazy">
+                        </div>
+                        <div class="card-info">
+                            <h4>Maracujá</h4>
+                            <p>Feito com a polpa natural e sementes da fruta.</p>
+                            <a href="https://wa.me/5512996261818?text=Quero encomendar Geladinho de Maracujá" target="_blank" rel="noopener noreferrer" class="btn-card">Pedir</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="card-img-holder">
+                            <img src="image/geladinho-nutela.jpg" alt="Geladinho Gourmet Nutela com Ninho" width="400" height="300" loading="lazy">
+                        </div>
+                        <div class="card-info">
+                            <h4>Nutela com Ninho</h4>
+                            <p>Feito com a chocolate e leite em pó.</p>
+                            <a href="https://wa.me/5512996261818?text=Quero encomendar Geladinho de Nutela com Ninho" target="_blank" rel="noopener noreferrer" class="btn-card">Pedir</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="card-img-holder">
+                            <img src="image/geladinhoimagemorango.jpg" alt="Geladinho Gourmet Frutas Vermelhas artesanal" width="400" height="300" loading="lazy">
+                        </div>
+                        <div class="card-info">
+                            <h4>Frutas Vermelhas</h4>
+                            <p>Sabor intenso com geleia artesanal.</p>
+                            <a href="https://wa.me/5512996261818?text=Quero encomendar Geladinho de Frutas Vermelhas" target="_blank" rel="noopener noreferrer" class="btn-card">Pedir</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="card-img-holder">
+                            <img src="image/GeladinhaOutros.png" alt="Geladinho Gourmet sabores variados" width="400" height="300" loading="lazy">
+                        </div>
+                        <div class="card-info">
+                            <h4>Outros sabores</h4>
+                            <p>Coco, ninho com nutella, ninho com morango, paçoca e <strong>panetone.</strong></p>
+                            <a href="https://wa.me/5512996261818?text=Quero encomendar outros sabores de Geladinho" target="_blank" rel="noopener noreferrer" class="btn-card">Pedir</a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="brownies" class="category-section">
+                <div class="category-title">
+                    <h3>Brownies</h3>
+                    <div class="separator"></div>
+                </div>
+                <div class="product-grid">
+                    
+                    <div class="product-card">
+                        <div class="card-img-holder">
+                            <img src="image/browniedocedeleite.jpg" alt="Brownie artesanal de Doce de Leite" width="400" height="300" loading="lazy">
+                        </div>
+                        <div class="card-info">
+                            <h4>Doce de Leite</h4>
+                            <p>O clássico recheio cremoso que derrete na boca.</p>
+                            <a href="https://wa.me/5512996261818?text=Quero encomendar Brownie de Doce de Leite" target="_blank" rel="noopener noreferrer" class="btn-card">Pedir</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="card-img-holder">
+                            <img src="image/browniebrigadeiro.jpg" alt="Brownie recheado de Brigadeiro" width="400" height="300" loading="lazy">
+                        </div>
+                        <div class="card-info">
+                            <h4>Brigadeiro</h4>
+                            <p>Coberto com nosso brigadeiro artesanal e granulado.</p>
+                            <a href="https://wa.me/5512996261818?text=Quero encomendar Brownie de Brigadeiro" target="_blank" rel="noopener noreferrer" class="btn-card">Pedir</a>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="card-img-holder">
+                            <img src="image/brownieninho.jpg" alt="Brownie recheado de Ninho" width="400" height="300" loading="lazy">
+                        </div>
+                        <div class="card-info">
+                            <h4>Ninho Cremoso</h4>
+                            <p>Recheio generoso de leite Ninho com massa úmida.</p>
+                            <a href="https://wa.me/5512996261818?text=Quero encomendar Brownie de Ninho" target="_blank" rel="noopener noreferrer" class="btn-card">Pedir</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="card-img-holder">
+                            <img src="image/browniepacoca.jpg" alt="Brownie recheado de Paçoca" width="400" height="300" loading="lazy">
+                        </div>
+                        <div class="card-info">
+                            <h4>Paçoca</h4>
+                            <p>O sabor brasileiro do amendoim com chocolate.</p>
+                            <a href="https://wa.me/5512996261818?text=Quero encomendar Brownie de Paçoca" target="_blank" rel="noopener noreferrer" class="btn-card">Pedir</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="card-img-holder">
+                            <img src="image/browniecafe.jpg" alt="Brownie sabor Café" width="400" height="300" loading="lazy">
+                        </div>
+                        <div class="card-info">
+                            <h4>Café</h4>
+                            <p>Sabor intenso e aromático para os apaixonados.</p>
+                            <a href="https://wa.me/5512996261818?text=Quero encomendar Brownie de Café" target="_blank" rel="noopener noreferrer" class="btn-card">Pedir</a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="docinhos" class="category-section">
+                <div class="category-title">
+                    <h3>Trufas</h3>
+                    <div class="separator"></div>
+                </div>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="card-img-holder">
+                            <img src="image/trufademaracuja.jpg" alt="Trufa artesanal de Maracujá" width="400" height="300" loading="lazy">
+                        </div>
+                        <div class="card-info">
+                            <h4>Trufa de Maracujá</h4>
+                            <p>Casquinha crocante e recheio suave.</p>
+                            <a href="https://wa.me/5512996261818?text=Quero Trufa de Maracujá" target="_blank" rel="noopener noreferrer" class="btn-card">Pedir</a>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="card-img-holder">
+                            <img src="image/trufadecoco.jpg" alt="Trufa artesanal de Coco" width="400" height="300" loading="lazy">
+                        </div>
+                        <div class="card-info">
+                            <h4>Trufa de Coco</h4>
+                            <p>O sabor tropical do prestígio caseiro.</p>
+                            <a href="https://wa.me/5512996261818?text=Quero Trufa de Coco" target="_blank" rel="noopener noreferrer" class="btn-card">Pedir</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="card-img-holder">
+                            <img src="image/trufadechocolate.jpg" alt="Trufa artesanal de Chocolate" width="400" height="300" loading="lazy">
+                        </div>
+                        <div class="card-info">
+                            <h4>Trufa de Chocolate</h4>
+                            <p>Chocolate puro em dobro.</p>
+                            <a href="https://wa.me/5512996261818?text=Quero Trufa de Chocolate" target="_blank" rel="noopener noreferrer" class="btn-card">Pedir</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="tortas" class="category-section">
+                <div class="category-title">
+                    <h3>Tortas no Pote</h3>
+                    <div class="separator"></div>
+                </div>
+                <div class="product-grid">
+                    
+                    <div class="product-card">
+                        <div class="card-img-holder">
+                            <img src="image/tortadelimao.jpg" alt="Torta de Limão no Pote" width="400" height="300" loading="lazy">
+                            <span class="tag">Mais Pedida</span>
+                        </div>
+                        <div class="card-info">
+                            <h4>Torta de Limão</h4>
+                            <p>O equilíbrio perfeito entre doce e azedo.</p>
+                            <a href="https://wa.me/5512996261818?text=Quero encomendar Torta de Limão" target="_blank" rel="noopener noreferrer" class="btn-card">Pedir</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="card-img-holder">
+                            <img src="image/tortademorango.jpg" alt="Torta de Morango no Pote" width="400" height="300" loading="lazy">
+                        </div>
+                        <div class="card-info">
+                            <h4>Torta de Morango</h4>
+                            <p>Creme leve com morangos frescos.</p>
+                            <a href="https://wa.me/5512996261818?text=Quero encomendar Torta de Morango" target="_blank" rel="noopener noreferrer" class="btn-card">Pedir</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="card-img-holder">
+                            <img src="image/tortadeninho.jpg" alt="Torta de Ninho com Nutella no Pote" width="400" height="300" loading="lazy">
+                        </div>
+                        <div class="card-info">
+                            <h4>Ninho com Nutella</h4>
+                            <p>Creme de leite ninho aveludado com Nutella.</p>
+                            <a href="https://wa.me/5512996261818?text=Quero encomendar Torta de Ninho" target="_blank" rel="noopener noreferrer" class="btn-card">Pedir</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="card-img-holder">
+                            <img src="image/tortadepacoca.jpg" alt="Torta de Paçoca no Pote" width="400" height="300" loading="lazy">
+                        </div>
+                        <div class="card-info">
+                            <h4>Paçoca</h4>
+                            <p>Para quem ama amendoim.</p>
+                            <a href="https://wa.me/5512996261818?text=Quero encomendar Torta de Paçoca" target="_blank" rel="noopener noreferrer" class="btn-card">Pedir</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="card-img-holder">
+                            <img src="image/tortadechocolate.jpg" alt="Torta de Chocolate no Pote" width="400" height="300" loading="lazy">
+                        </div>
+                        <div class="card-info">
+                            <h4>Chocolate</h4>
+                            <p>Intenso e cremoso.</p>
+                            <a href="https://wa.me/5512996261818?text=Quero encomendar Torta de Chocolate" target="_blank" rel="noopener noreferrer" class="btn-card">Pedir</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="salgados" class="category-section">
+                <div class="category-title">
+                    <h3>Salgados <br> Artesanais</h3>
+                    <div class="separator"></div>
+                </div>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="card-img-holder">
+                            <img src="image/tortadefrango.jpg" alt="Torta de Frango Inteira artesanal" width="400" height="300" loading="lazy">
+                        </div>
+                        <div class="card-info">
+                            <h4>Torta de Frango</h4>
+                            <p>Massa caseira que derrete na boca.</p>
+                            <a href="https://wa.me/5512996261818?text=Quero encomendar Torta de Frango" target="_blank" rel="noopener noreferrer" class="btn-card">Pedir</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="card-img-holder">
+                            <img src="image/tortadefrango.jpg" alt="Fatia de Torta de Frango caseira" width="400" height="300" loading="lazy">
+                        </div>
+                        <div class="card-info">
+                            <h4>Torta de <br> Frango (Fatia)</h4>
+                            <p>Recheio cremoso e tempero especial.</p>
+                            <a href="https://wa.me/5512996261818?text=Quero encomendar Fatia de Torta" target="_blank" rel="noopener noreferrer" class="btn-card">Pedir</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="especial-natal" class="category-section">
+                <div class="category-title">
+                    <h3>Especiais <br> de Natal</h3>
+                    <div class="separator"></div>
+                </div>
+                <div class="product-grid">
+        
+                    <div class="product-card">
+                        <div class="card-img-holder">
+                            <img src="image/ArtesanasNatal01.jpg" alt="Caixa de Mini Brownies de Natal" width="400" height="300" loading="lazy">
+                            <span class="tag">Natal</span>
+                        </div>
+                        <div class="card-info">
+                            <h4>Brownie especial de Natal</h4>
+                            <p>Mimos de chocolate decorados com tema natalino.</p>
+                            <a href="https://wa.me/5512996261818?text=Quero encomendar a Caixa de Mini Brownies de Natal" target="_blank" rel="noopener noreferrer" class="btn-card">Encomendar</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="card-img-holder">
+                            <img src="image/ArtesanasNatal02.jpg" alt="Brownies recheados Árvore de Natal" width="400" height="300" loading="lazy">
+                            <span class="tag">Natal</span>
+                        </div>
+                        <div class="card-info">
+                            <h4>Brownies recheados Árvore Festiva</h4>
+                            <p> Temos 5 sabores para escolher.</p>
+                            <a href="https://wa.me/5512996261818?text=Quero encomendar a Árvore Festiva de Chocolate" target="_blank" rel="noopener noreferrer" class="btn-card">Pedir</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="card-img-holder">
+                            <img src="image/ArtesanasNatal03.jpg" alt="Kit Presente de Mini Brownies para Natal" width="400" height="300" loading="lazy">
+                            <span class="tag">Natal</span>
+                        </div>
+                        <div class="card-info">
+                            <h4>Kit mini Brownies recheados</h4>
+                            <p>Caixa elegante com 6, 4 ou 2 mini brownies para presente.</p>
+                            <a href="https://wa.me/5512996261818?text=Quero o Kit Presente de Brownies" target="_blank" rel="noopener noreferrer" class="btn-card">Encomendar</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="card-img-holder">
+                            <img src="image/ArtesanasNatal04.jpg" alt="Mini Bolo Brownie de Natal com Decoração Festiva" width="400" height="300" loading="lazy">
+                            <span class="tag">Natal</span>
+                        </div>
+                        <div class="card-info">
+                            <h4>Mini Brownies recheados</h4>
+                            <p>Com recheio cremoso e decoração festiva.</p>
+                            <a href="https://wa.me/5512996261818?text=Quero o Mini Bolo Artesanal de Natal" target="_blank" rel="noopener noreferrer" class="btn-card">Pedir</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="card-img-holder">
+                            <img src="image/ArtesanasNatal05.jpg" alt="Bolo Guirlanda Recheada de Natal" width="400" height="300" loading="lazy">
+                            <span class="tag">Natal</span>
+                        </div>
+                        <div class="card-info">
+                            <h4>Guirlanda recheada</h4>
+                            <p>Com frutas e decoração de chocolate.</p>
+                            <a href="https://wa.me/5512996261818?text=Quero encomendar o Bolo Guirlanda de Natal" target="_blank" rel="noopener noreferrer" class="btn-card">Encomendar</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="card-img-holder">
+                            <img src="image/ArtesanasNatal06.jpg" alt="Kit Festa 20 Mini Brownies de Natal" width="400" height="300" loading="lazy">
+                            <span class="tag">Natal</span>
+                        </div>
+                        <div class="card-info">
+                            <h4>Kit festa mini brownies</h4>
+                            <p>Vinte unidades.</p>
+                            <a href="https://wa.me/5512996261818?text=Quero o Kit Festa de Natal" target="_blank" rel="noopener noreferrer" class="btn-card">Pedir</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="especial-pascoa" class="category-section">
+                <div class="category-title">
+                    <h3>Especiais <br> de Páscoa</h3>
+                    <div class="separator"></div>
+                </div>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="card-img-holder">
+                            <img src="image/ovodepascoadechocolate.jpg" alt="Ovo de Colher de Chocolate Brigadeiro" width="400" height="300" loading="lazy">
+                            <span class="tag">Sazonal</span>
+                        </div>
+                        <div class="card-info">
+                            <h4>Ovo de Colher <br> Brigadeiro</h4>
+                            <p>Muito recheio e carinho.</p>
+                            <a href="https://wa.me/5512996261818?text=Quero ver cardápio de Páscoa" target="_blank" rel="noopener noreferrer" class="btn-card">Consultar</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="card-img-holder">
+                            <img src="image/ovodepascoademaracuja.jpg" alt="Ovo de Colher sabor Maracujá" width="400" height="300" loading="lazy">
+                            <span class="tag">Sazonal</span>
+                        </div>
+                        <div class="card-info">
+                            <h4>Ovo de Colher <br> Maracujá</h4>
+                            <p>Perfeição em forma de chocolate.</p>
+                            <a href="https://wa.me/5512996261818?text=Quero ver cardápio de Páscoa" target="_blank" rel="noopener noreferrer" class="btn-card">Consultar</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+
+        <section id="encomendas" class="order-banner">
+            <div class="container">
+                <div class="order-content">
+                    <h2>Pronto para adoçar seu dia?</h2>
+                    <p>Todas as nossas delícias são feitas sob encomenda para garantir o frescor máximo. Aceitamos PIX.</p>
+                    <a href="https://wa.me/5512996261818" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-large">
+                        <i class="fab fa-whatsapp"></i> Encomendar Agora
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h3>Artesanas</h3>
+                <p>Doces e salgados feitos <br> com amor em Caraguatatuba.</p>
+            </div>
+            <div class="footer-contact">
+                <h4>Contato</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Caraguatatuba, SP</p>
+                <p><i class="fas fa-phone"></i> (12) 99626-1818</p>
+            </div>
+            <div class="footer-social">
+                <h4>Siga-nos</h4>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/artesanasdocesesalgados?igsh=NHB4ZTAxa3A5bHlp" target="_blank" rel="noopener noreferrer" aria-label="Acessar nosso Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/5512996261818" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco via WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <!-- Botão PWA adicionado aqui ao lado dos direitos -->
+            <p>&copy; 2026 Artesanas. Todos os direitos reservados. <button id="btnInstallPwa" class="pwa-btn" aria-label="Instalar App"><i class="fas fa-download"></i> Instalar App</button></p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5512996261818" class="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco pelo WhatsApp" title="Fale conosco">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- === SCRIPT DE CONTROLE DO PWA === -->
+    <script>
+        // 1. Registrar o Service Worker
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(reg => console.log('PWA: Service Worker registrado.', reg))
+                    .catch(err => console.error('PWA: Falha ao registrar Service Worker.', err));
+            });
+        }
+
+        // 2. Lógica do botão de instalação
+        let promptDeInstalacao;
+        const botaoInstalar = document.getElementById('btnInstallPwa');
+
+        // Ouve o evento do Chrome/Android que diz "este site pode ser instalado"
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault(); // Impede a mini-barra chata de aparecer automaticamente
+            promptDeInstalacao = e; // Guarda o evento
+            botaoInstalar.style.display = 'inline-block'; // Mostra nosso botão discreto
+        });
+
+        // Quando o usuário clica no nosso botão
+        botaoInstalar.addEventListener('click', async () => {
+            if (promptDeInstalacao) {
+                promptDeInstalacao.prompt(); // Mostra o aviso nativo do sistema
+                const { outcome } = await promptDeInstalacao.userChoice;
+                if (outcome === 'accepted') {
+                    console.log('PWA: Usuário aceitou a instalação');
+                }
+                promptDeInstalacao = null; // Limpa o evento
+                botaoInstalar.style.display = 'none'; // Esconde o botão após instalar
+            }
+        });
+
+        // Ocultar botão se o app já foi instalado
+        window.addEventListener('appinstalled', () => {
+            botaoInstalar.style.display = 'none';
+            console.log('PWA: Instalado com sucesso.');
+        });
+    </script>
+</body>
+</html>
